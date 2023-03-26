@@ -10,37 +10,105 @@ html{
 }
 
 body{
-    background-color: #E1E1E1FF;
+    background-color: #f8f2f2;
 }
 
-h1, h2, h3 {
-    font-family: "Bradley Hand ITC", "Times New Roman", serif;
-    color: #bccaec;
-    color: rgba(134,134,134,0.9);
+h1, h2 {
+    font-family: "Arial", serif;
+    color: black;
+    font-weight: bold;
+}
+/*style of header h2*/
+
+header h2.Name-Profile{
+    font-family: "Arteco-typography-mono", serif;
+    font-size: 40px;
+    padding-top: 1px;
+    font-weight: bold;
+    color: #000;
 }
 
+header h2.profile{
+    font-family: "Arteco-typography-mono", serif;
+    font-size: 20px;
+    padding-top: 1px;
+    font-weight: bold;
+    color: #000;
+}
+header h2.role{
+    font-family: "Arteco-typography-mono", serif;
+    font-size: 17px;
+    padding-top: 1px;
+    font-weight: bold;
+    color: #ff7200;
+}
+header h2.company{
+    font-family: "Arteco-typography-mono", serif;
+    font-size: 12px;
+    padding-top: 2px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #ff7200;
+}
+header h2.date, h2.place{
+    font-family: "Arteco-typography-mono", serif;
+    font-size: 12px;
+    padding-top: 2px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #596067;
+}
+section p.info{
+    font-family: "Arteco-typography-sans", serif;
+    font-size: 17px;
+    /*padding-top: 2px;*/
+   /* letter-spacing: 1px;*/
+    text-align: justify;
+    font-weight: normal;
+    color: #131313;
+}
+article h2.body-profile{
+    font-family: "Arteco-typography-mono", serif;
+    font-size: 30px;
+    padding-top: 1px;
+    font-weight: bold;
+    color: #000;
+}
 
 
 .header-site{
     background-color: #0f172a;
     color: #e2e8f0;
-    margin: 0 0 2rem 0;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: row-reverse;
-    /*align-content: stretch;*/
+    align-content: stretch;
     flex-wrap: nowrap;
-    justify-content: left;
+   justify-content: left;
 }
+h2{
+    background-color: #fff;
+}
+
 .branding {
     margin: 0;
     padding: 1rem;
 }
-
 .nav-site   {
-            padding-left: 8.5em;
-            margin: 0 1rem;
-            display: flex;
-            }
+    background-color: #E1E1E1FF;
+    color: #000;
+    padding-left:1em;
+    margin: 0;
+    display: flex;
+    padding-top: inherit;
+}
+.nav-site a{
+    color: #0f172a;
+    font-family: Arial, serif;
+    font-weight: bold;
+    transition: 0.4s ease;
+
+}
 
 .nav-button{
     display: block;
@@ -52,24 +120,18 @@ h1, h2, h3 {
     margin: 0 1rem;
     text-align: center;
     font-weight: 300;
+
 }
 
 .nav-button:hover {
-    background: #0ea5e9;
+    background: #A4A4A4FF;
     border-bottom: 3px solid #dc2626;
     /*sombrear cuando el puntero del mouse esta en el*/
 }
-
 .nav-button.active{
-    border-bottom-color: #f59e0b;
+    border-bottom-color: #ff7200;
 }
 
-.footer-site {
-    background-color: #0f172a;
-    color: #e2e8f0;
-    padding: 20px;
-    text-align: center;
-}
 .singCol{
     max-width: 750px;
     margin: 0 auto;
@@ -79,15 +141,13 @@ h1, h2, h3 {
     font-size: inherit;
 }
 
-
-
 .live-video-hero-image{
     background-color: #f59e0b;
 }
 
 .live-video-hero-image {
-    border-top-left-radius: 1.6rem;
-    border-top-right-radius: 0.8rem;
+    /*border-top-left-radius: 1.6rem;
+    border-top-right-radius: 0.8rem;*/
     position: relative;
     overflow-y: hidden;
     transition-duration: 1s;
@@ -95,9 +155,6 @@ h1, h2, h3 {
     transition-property: max-height;
     transition-delay: 0s;
 }
-
-
-
 
 #wrapper {
     max-width: 1000px;
@@ -111,50 +168,157 @@ h1, h2, h3 {
 }
 
 #wrapper header, #wrapper footer{
-    background-color: #000000;
+    background-color: #000;
 }
 
 main{
-    background-color: #ffffff;
+    background-color: #f8f2f2;
     max-width: 100%;
     min-height: auto;
     padding: 1rem;
     grid-area: content;
 
     display: grid;
-    grid-template-areas: "article1 article1 aside";
-
+    grid-template-areas: "article1 article1 aside"
+                            "article article aside"
+                            "article2 article2 aside"
+                            "article3 article3 aside"
+                            "article4 article4 aside"
+                            "article5 article5 aside";
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+}
+.detail-personal{
+    grid-area: article1;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #e0dfdf;
+}
+.experience{
+    grid-area: article;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #e0dfdf;
+}
+.Employment-history1{
+    grid-area: article2;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #e0dfdf;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
+.Employment-history2{
+    grid-area: article3;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #e0dfdf;
+}
+.Employment-history3{
+    grid-area: article4;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #e0dfdf;
+}
+.Employment-history4{
+    grid-area: article5;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #e0dfdf;
 }
 
+main aside{
+    grid-area: aside;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #e0dfdf;
+}
+aside h3{
+    font-family: sans-serif, serif;
+    color: #ff7200;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+aside p.info{
+    font-family: "Arteco-typography-sans", serif;
+    font-size: 15px;
+    /*padding-top: 2px;*/
+    /* letter-spacing: 1px;*/
+    text-align: justify;
+    font-weight: bold;
+    color: #131313;
+}
+aside p.place{
+    font-family: "Arteco-typography-mono", serif;
+    font-size: 12px;
+    padding-top: 2px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #596067;
+}
+
+
+/*footer class*/
+.footer-site {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 20px 0;
+    text-align: center;
+}
 /*for social media */
-.social-icons a{
-    margin: 0 10px;
+.social-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* margin: 0 30px;
     color: #555;
-    font-size: 2rem;
-    transition: color 0.3s ease-in-out;
+    font-size: 2.2rem;
+    transition: color 0.3s ease-in-out*/
+
+    font-size: 35px;
+    padding-left: 24px;
+    padding-top: 15px;
+    transition: 0.3s ease ;
+}
+a{
+    text-decoration: none;
+    color: #555;
+
+}
+i{
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
 }
 .social-icons a:hover{
-    color: #0077B5;
+    color: #ff7200;
 }
 
-/*font icons */
-.fa {
-    font-size: inherit;
+/*Footer bottom*/
+.footer-bottom {
+    background: #000;
+    color: #ff7200;
+    padding: 20px 0;
+    text-align: center;
 }
-.fa-facebook:before{
-    content: "\f09a";
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
 }
-.fa-twitter:before{
-    content: "\f099";
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
-.fa-instagram:before{
-    content: "\f16d";
-}
+
 
