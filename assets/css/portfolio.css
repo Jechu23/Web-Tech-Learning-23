@@ -13,6 +13,9 @@ body{
     background-color: #f8f2f2;
 }
 
+
+
+
 h1, h2 {
     font-family: "Arial", serif;
     color: black;
@@ -84,7 +87,7 @@ article h2.body-profile{
     flex-direction: row-reverse;
     align-content: stretch;
     flex-wrap: nowrap;
-   justify-content: left;
+   justify-content: center;
 }
 h2{
     background-color: #fff;
@@ -94,21 +97,30 @@ h2{
     margin: 0;
     padding: 1rem;
 }
-.nav-site   {
-    background-color: #E1E1E1FF;
+.nav-site{
+    /*background-color: #E1E1E1FF;
     color: #000;
     padding-left:1em;
     margin: 0;
     display: flex;
-    padding-top: inherit;
-}
-.nav-site a{
-    color: #0f172a;
-    font-family: Arial, serif;
-    font-weight: bold;
-    transition: 0.4s ease;
+    padding-top: inherit;*/
+    padding: 0;
+    margin: 0;
+    display: flex;
 
 }
+.nav-site a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.nav-site a:hover{
+    color: #ff7200;
+}
+
+
 
 .nav-button{
     display: block;
@@ -156,6 +168,12 @@ h2{
     transition-delay: 0s;
 }
 
+.container{
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+/*
 #wrapper {
     max-width: 1000px;
     min-height: 100vh;
@@ -169,7 +187,7 @@ h2{
 
 #wrapper header, #wrapper footer{
     background-color: #000;
-}
+}*/
 
 main{
     background-color: #f8f2f2;
@@ -305,7 +323,7 @@ i{
 
 /*Footer bottom*/
 .footer-bottom {
-    background: #000;
+    background: #0f172a;
     color: #ff7200;
     padding: 20px 0;
     text-align: center;
