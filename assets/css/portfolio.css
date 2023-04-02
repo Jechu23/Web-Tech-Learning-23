@@ -236,6 +236,11 @@ button:hover{
 
 
 /*   -------------------------- */
+
+.logo-01{
+    width: 64px;
+    height: 64px;
+}
 html{
     font-family: Poppins, "Trebuchet MS", Arial, sans-serif;
     color: #1e293b;
