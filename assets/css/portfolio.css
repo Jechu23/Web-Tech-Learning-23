@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 
 .main-01{
@@ -662,11 +663,33 @@ input[type="submit"]:hover {
 .containerContact{
     background-color: #ffffff;
     width: 60%;
+    min-height: 100vh;
     border: 1px solid #ccc;
     padding: 1%;
     margin: 1% auto;
     border-radius: 10px;
+}
+.title_map{
+    color: #ff7200;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.location-google_maps   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+iframe{
+    width: 80%;
+    height: 500px;
 }
 
 .required:after {
@@ -703,6 +726,7 @@ input[type="submit"]:hover {
     background-size: cover;
 
     width: 60%;
+    height: 100vh;
     border: 1px solid #ccc;
     padding: 1%;
     margin: 1% auto;
@@ -753,4 +777,30 @@ input[type="submit"]:hover {
     letter-spacing: 2px;
     text-align: justify;
     color: #ff7200;
+}
+
+/* Demos */
+h1{
+    color: black;
+}
+.demos-container{
+    background-color: #ffffff;
+    width: 60%;
+    min-height: 100vh;
+    border: 1px solid #ccc;
+    padding: 1%;
+    margin: 1% auto;
+    border-radius: 10px;
+}
+
+/* projects */
+
+.project_container{
+    background-color: #ffffff;
+    width: 60%;
+    min-height: 100vh;
+    border: 1px solid #ccc;
+    padding: 1%;
+    margin: 1% auto;
+    border-radius: 10px;
 }

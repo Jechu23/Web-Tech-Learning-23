@@ -19,18 +19,17 @@
 </head>
 <body>
 <header class="header-site">
-
-  <nav class="nav-site">
-    <a href="../index.html" class="nav-button ">Home</a>
-    <a href="../about/index.html" class="nav-button">About</a>
-    <a href="../resume/index.html" class="nav-button">Resume</a>
-    <a href="#" class="nav-button">Projects</a>
-    <a href="#" class="nav-button">Demos</a>
-    <a href="#" class="nav-button active">Contact Us</a>
-  </nav>
-  <div>
-    <img src="https://via.placeholder.com/64/000000/ffffff" alt = logo>
-  </div>
+      <nav class="nav-site">
+        <a href="../index.html" class="nav-button ">Home</a>
+        <a href="../about/index.html" class="nav-button">About</a>
+        <a href="../resume/index.html" class="nav-button">Resume</a>
+        <a href="../projects/index.html" class="nav-button">Projects</a>
+        <a href="../demos/index.html" class="nav-button">Demos</a>
+        <a href="../contact/index.html" class="nav-button active">Contact Us</a>
+      </nav>
+      <div>
+        <img src="https://via.placeholder.com/64/000000/ffffff" alt = logo>
+      </div>
 </header>
 
 <div class="containerContact">
@@ -43,21 +42,21 @@
 
 
       <form id="myContacUs" name="myContactUs" action="#" method="POST">
-       <p>
-         <label for="name" class="required">Name:</label>
-         <input type="text" name="name" id="name" placeholder="name...." required/>
-       </p>
-        <p>
-          <label for="eMail" class="required"> eEmail:</label>
-          <input type="email" id="eMail" required placeholder="somoone@example.com">
-        </p>
-        <p>
-          <label for="phoneNumber">Phone Number</label>
-          <input type="tel" name="phoneNumber" id="phoneNumber">
-        </p>
-        <p>
-          <label for="subject" class="required">Subject:</label>
-         <input type="text" name="subject" id="subject" required placeholder="Write something"/>
+           <p>
+             <label for="name" class="required">Name:</label>
+             <input type="text" name="name" id="name" placeholder="name...." required/>
+           </p>
+            <p>
+              <label for="eMail" class="required"> eEmail:</label>
+              <input type="email" id="eMail" required placeholder="somoone@example.com">
+            </p>
+            <p>
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" name="phoneNumber" id="phoneNumber">
+            </p>
+            <p>
+              <label for="subject" class="required">Subject:</label>
+             <input type="text" name="subject" id="subject" required placeholder="Write something"/>
             <!--
           <select name="subject" id="subject" required>
             <option value="Bug">Bug Report</option>
@@ -65,18 +64,27 @@
             <option value="General">General Feedback</option>
             <option value="Website">Website Feedback</option>
           </select>-->
-        </p>
+            </p>
 <!-- message -->
-        <p>
-          <label for="message" class="required">Message</label>
-          <textarea rows="6" id="message" name="message" required ></textarea>
-        </p>
-        <p>
-          <label for="send"></label>
-          <input type="submit" id="send" value="Send">
-        </p>
+            <p>
+              <label for="message" class="required">Message</label>
+              <textarea rows="6" id="message" name="message" required ></textarea>
+            </p>
+            <p>
+              <label for="send"></label>
+              <input type="submit" id="send" value="Send">
+                <label for="clear"></label>
+                <input type="submit" id="clear" value="clear">
+            </p>
+
+
       </form>
+    <div class="location-google_maps">
+        <h1 class="title_map"> Location Map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13533.879519306192!2d115.89948496775487!3d-32.00238333394852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bc0e8395e001%3A0x504f0b535df3fc0!2sBentley%20WA%206102!5e0!3m2!1sen!2sau!4v1683702634194!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </div>
+
 
 <footer class="footer-site-contact">
   <!-- (div>{Footer Column})*2 -->
