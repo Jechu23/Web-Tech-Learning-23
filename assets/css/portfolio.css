@@ -804,3 +804,16 @@ h1{
     margin: 1% auto;
     border-radius: 10px;
 }
+/*ex-03*/
+.containerEx03{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
